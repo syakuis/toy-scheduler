@@ -25,7 +25,7 @@ public class SchedulerTest {
 
     @After
     public void after() throws Exception {
-        Thread.sleep(10000);
+        Thread.sleep(1000);
     }
 
     private JobDetail jobDetail(String name) {
