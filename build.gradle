@@ -20,6 +20,7 @@ buildscript {
         classpath "net.ltgt.gradle:gradle-apt-plugin:0.18"
         classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
         classpath "org.asciidoctor:asciidoctor-gradle-plugin:1.5.3"
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.7"
     }
 }
 
@@ -27,6 +28,7 @@ apply plugin: "java"
 apply plugin: "idea"
 apply plugin: "org.springframework.boot"
 apply plugin: "io.spring.dependency-management"
+apply plugin: "org.sonarqube"
 
 wrapper {
     gradleVersion = '5.3'
@@ -74,6 +76,8 @@ dependencies {
     compile 'org.mariadb.jdbc:mariadb-java-client:2.3.0'
     compile 'org.springframework.boot:spring-boot-starter-quartz'
     compile 'org.apache.commons:commons-lang3:3.7'
+    // Classes not found during the analysis : [javax.annotation.meta.When]
+    compile 'com.google.code.findbugs:jsr305:3.0.0'
 }
 
 bootJar {

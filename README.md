@@ -1,5 +1,7 @@
 # Scheduler - Toy Project
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=syakuis_toy-scheduler&metric=alert_status)](https://sonarcloud.io/dashboard?id=syakuis_toy-scheduler)
+
 서버와 클라이언트가 실시간으로 데이터를 상호작용할 수 있도록 구현한다.
 
 ### 개발언어
