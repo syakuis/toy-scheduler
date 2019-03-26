@@ -1,4 +1,5 @@
 application-*.properties
+!application-prod.properties
 !application-build.properties
 !src/test/resources/application-default.properties
 
