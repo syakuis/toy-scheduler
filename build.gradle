@@ -52,9 +52,21 @@ repositories {
     mavenCentral()
 }
 
+System.setProperty('spring.profiles.active', System.properties.getProperty("spring.profiles.active"))
+
+ext {
+    springProfiles = System.properties.getProperty("spring.profiles.active")
+}
+
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
+    }
+}
+
+processResources {
+    filesMatching('application.properties') {
+        expand(project.properties)
     }
 }
 
@@ -84,4 +96,3 @@ bootJar {
     enabled = true
     mainClassName = "org.syaku.toy.Application"
 }
-

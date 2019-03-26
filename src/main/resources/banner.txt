@@ -1,0 +1,15 @@
+
+   _____                   _                _______
+  / ____|                 | |              |__   __|
+ | (___    _   _    __ _  | | __  _   _       | |      ___    _   _   ___
+  \___ \  | | | |  / _` | | |/ / | | | |      | |     / _ \  | | | | / __|
+  ____) | | |_| | | (_| | |   <  | |_| |      | |    | (_) | | |_| | \__ \
+ |_____/   \__, |  \__,_| |_|\_\  \__,_|      |_|     \___/   \__, | |___/
+            __/ |                                              __/ |
+           |___/                                              |___/
+
+>> spring boot version : ${spring-boot.version}
+>> spring profiles     : ${spring.profiles.active}
+>> version             : ${app.version}
+>> time zone           : ${app.time-zone}
+>> file encoding       : ${app.file.encoding}
